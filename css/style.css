@@ -78,26 +78,24 @@ html, body {
     height: 250px;
     box-sizing: border-box;
     width: 100vw;
-    /* border: 2px dashed black; */
     background-image: url("../img/curve.png");
     background-size: cover;
     background-position: center top;
 }
 
 .product {
-    /* border: 1px dashed black; */
     margin-top: -40%;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .products {
-        grid-template-columns: minmax(240px, 350px);
-        /* grid-template-columns: repeat(auto-fit, 1fr);*/
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         height: auto;
     }
 
     .product {
         margin-top: 0;
+        text-align: center;
     }
 }
 
@@ -125,4 +123,14 @@ html, body {
 
 .main-boton:hover {
     background:var(--verde-oscuro); 
+}
+
+/******************
+*ESTILOS PRODUCTOS*
+*******************/
+
+@media screen and (max-width: 328px) {
+    #menu ol {
+        display: none;
+    }
 }
