@@ -1,0 +1,128 @@
+/******************
+*ESTILOS GENERALES*
+*******************/
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+}
+/*Variables de css*/
+:root {
+    --green-color: hsl(140, 64%, 49%);
+    --verde-oscuro:  hsl(140, 80%, 34%);
+    --black-color:#313337;
+
+    /*Espaciado*/
+    --space: 10px;
+
+    /*Tipografia*/
+    --normal: 12px;
+    /*Sombra*/
+    --box: 0 0 1px #c1bcbc;
+}
+
+/******************
+*ESTILOS MENU*
+*******************/
+
+#menu {
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: var(--green-color);
+    padding: var(--space);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu ol {
+    list-style: none;
+    display: flex;
+}
+
+#menu ol a {
+    padding-left: 20px;
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+#menu ol a:hover  {
+    color: white;
+}
+
+#main-section {
+    height: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-section .title {
+    max-width:70%; 
+    margin-bottom: 10%;
+}
+
+/******************
+*ESTILOS PRODUCTOS*
+*******************/
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+    justify-content: center;
+    grid-gap: 16px;
+    padding: 16px;
+    height: 250px;
+    box-sizing: border-box;
+    width: 100vw;
+    /* border: 2px dashed black; */
+    background-image: url("../img/curve.png");
+    background-size: cover;
+    background-position: center top;
+}
+
+.product {
+    /* border: 1px dashed black; */
+    margin-top: -40%;
+}
+
+@media screen and (max-width: 550px) {
+    .products {
+        grid-template-columns: minmax(240px, 350px);
+        /* grid-template-columns: repeat(auto-fit, 1fr);*/
+        height: auto;
+    }
+
+    .product {
+        margin-top: 0;
+    }
+}
+
+.product .content {
+    background: white;
+    padding: 10px;
+    box-shadow: var(--box);
+}
+
+.image-content {
+    text-align: center;
+}
+
+.main-boton {
+    background:var(--green-color);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: var(--normal);
+    color: white;
+    border-bottom: 5px solid var(--verde-oscuro);
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.main-boton:hover {
+    background:var(--verde-oscuro); 
+}
