@@ -1,0 +1,81 @@
+/******************
+*ESTILOS GENERALES*
+*******************/
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+:root {
+    /*Colores*/
+    --white-color:#FFFFFF;
+    --gray-color:#EEEEEE;
+    --dark-color: #313337;
+    --black-color: #000000;
+    --green-color: hsl(140, 64%, 49%);
+    --green-dark-color:  hsl(140, 80%, 34%);
+/*Estilos de fuente*/
+    --title: bold 30px 'Open Sans', sans-serif;
+    --subtitle-17: bold 17px 'Open Sans', sans-serif;
+    --description-12: normal 12px 'Open Sans', sans-serif;
+    /*Espaciado*/
+    --space: 10px;
+    /*Sombra*/
+    --box: 0 0 1px #c1bcbc;
+}
+
+
+/******************
+*ESTILOS MENU*
+*******************/
+#menu {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--green-color);
+    padding: var(--space);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu ol {
+    list-style: none;
+    display: flex;
+}
+
+#menu ol a {
+    padding-left: 20px;
+    color: var(--dark-color);
+    font: var(--description-12);
+    text-decoration: none;
+}
+
+#menu ol a:hover  {
+    color:var(--white-color);
+}
+
+#main-section {
+    box-sizing: border-box;
+    height: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 16px;
+}
+
+#main-section .title {
+    font: var(--title);
+    color: var(--dark-color);
+    text-align: center;
+}
+@media screen and (max-width: 344px) {
+    #menu ol {
+        display: none;
+    }
+}
