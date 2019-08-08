@@ -1,0 +1,101 @@
+/******************
+*ESTILOS GENERALES*
+*******************/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.pay-container {
+    display: grid;
+    grid-template-columns: 240px 340px;
+    grid-gap: 16px;
+    align-items: center;
+    max-width: 800px;
+}
+
+/******************
+*ESTILOS CARD*
+*******************/
+.card {
+    height: 234px;
+    width: 240px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+    border-radius: 2px;
+    background: var(--white-color);
+    padding: 10px;
+    
+}
+
+.image-card  {
+    max-width: 134px;
+    max-height: 134px;
+    margin: 0 auto;
+}
+.image-card img {
+    width:100%;
+}
+
+
+.card-title {
+    margin: 0;
+    color: var(--dark-color);
+    font:var(--subtitle-17);
+}
+.card-description {
+    color: var(--dark-color);
+    font:var(--description-12);
+}
+
+
+/******************
+*ESTILOS FORMULARIO*
+*******************/
+
+.form {
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+    border-radius: 2px;
+    background: var(--white-color);
+    padding: 10px;
+    /* height: 270px; */
+}
+.form label {
+    display: block;
+    margin: 10px 0 5px 0; 
+
+}
+.form .data {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 2px;
+    border: 1px solid #313337;
+}
+
+.pay {
+    background:var(--green-color);
+    font: var(--subtitle-17);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color:var(--white-color);
+    border-bottom: 5px solid var(--green-dark-color);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:630px) {
+    /* main {
+        height: auto;
+        justify-content: center;
+        background: green;
+    }
+    .pay-container {
+        justify-content: center;
+        grid-template-columns: 1fr;
+    } */
+}
