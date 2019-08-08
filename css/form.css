@@ -5,23 +5,27 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 60px);
+    min-height: 100vh;
+    max-width: 800px;
+    margin: auto; 
 }
 
 .pay-container {
+    box-sizing: border-box;
+    width: 100%;
     display: grid;
     grid-template-columns: 240px 340px;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    justify-content: center;
     grid-gap: 16px;
+    padding: 16px;
     align-items: center;
-    max-width: 800px;
 }
 
 /******************
 *ESTILOS CARD*
 *******************/
 .card {
-    height: 234px;
-    width: 240px;
     box-sizing: border-box;
     box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
     border-radius: 2px;
@@ -88,14 +92,15 @@ main {
     margin-top: 10px;
 }
 
-@media screen and (max-width:630px) {
-    /* main {
-        height: auto;
-        justify-content: center;
-        background: green;
-    }
+@media screen and (max-width:620px) {
     .pay-container {
+        /* grid-template-columns: repeat(auto-fit, minmax(100px, 240px)); */
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         justify-content: center;
-        grid-template-columns: 1fr;
-    } */
+    } 
 }
+
+@media screen and (max-width:260px) {    .pay-container {
+    grid-template-columns: 1fr;
+
+} }
