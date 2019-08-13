@@ -38,6 +38,7 @@
     color: var(--dark-color);
 }
 
+
 @media screen and (max-width: 450px) {
     .product {
         grid-template-columns: 1fr;

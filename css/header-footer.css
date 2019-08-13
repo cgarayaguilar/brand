@@ -79,3 +79,14 @@ html, body {
         display: none;
     }
 }
+
+footer {
+    height: 60px;
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+footer a { color:var(--gray-color); }

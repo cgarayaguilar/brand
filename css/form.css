@@ -2,105 +2,99 @@
 *ESTILOS GENERALES*
 *******************/
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    max-width: 800px;
-    margin: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: auto;
 }
 
 .pay-container {
-    box-sizing: border-box;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 240px 340px;
-    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-    justify-content: center;
-    grid-gap: 16px;
-    padding: 16px;
-    align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 240px 340px;
+  justify-content: center;
+  grid-gap: 16px;
+  padding: 16px;
+  align-items: center;
 }
 
 /******************
 *ESTILOS CARD*
 *******************/
 .card {
-    box-sizing: border-box;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
-    border-radius: 2px;
-    background: var(--white-color);
-    padding: 10px;
-    
+  box-sizing: border-box;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background: var(--white-color);
+  padding: 10px;
 }
 
-.image-card  {
-    max-width: 134px;
-    max-height: 134px;
-    margin: 0 auto;
+.image-card {
+  max-width: 134px;
+  max-height: 134px;
+  margin: 0 auto;
 }
 .image-card img {
-    width:100%;
+  width: 100%;
 }
-
 
 .card-title {
-    margin: 0;
-    color: var(--dark-color);
-    font:var(--subtitle-17);
+  margin: 0;
+  color: var(--dark-color);
+  font: var(--subtitle-17);
 }
 .card-description {
-    color: var(--dark-color);
-    font:var(--description-12);
+  color: var(--dark-color);
+  font: var(--description-12);
 }
-
 
 /******************
 *ESTILOS FORMULARIO*
 *******************/
 
 .form {
-    box-sizing: border-box;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
-    border-radius: 2px;
-    background: var(--white-color);
-    padding: 10px;
-    /* height: 270px; */
+  box-sizing: border-box;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background: var(--white-color);
+  padding: 10px;
+  /* height: 270px; */
 }
 .form label {
-    display: block;
-    margin: 10px 0 5px 0; 
-
+  display: block;
+  margin: 10px 0 5px 0;
 }
 .form .data {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px;
-    border: 2px;
-    border: 1px solid #313337;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #313337;
 }
 
 .pay {
-    background:var(--green-color);
-    font: var(--subtitle-17);
-    width: 100%;
-    padding: 10px;
-    border: none;
-    color:var(--white-color);
-    border-bottom: 5px solid var(--green-dark-color);
-    border-radius: 5px;
-    margin-top: 10px;
+  background: var(--green-color);
+  font: var(--subtitle-17);
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: var(--white-color);
+  border-bottom: 5px solid var(--green-dark-color);
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-@media screen and (max-width:620px) {
-    .pay-container {
-        /* grid-template-columns: repeat(auto-fit, minmax(100px, 240px)); */
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        justify-content: center;
-    } 
+@media screen and (max-width: 620px) {
+  .pay-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width:260px) {    .pay-container {
+@media screen and (max-width: 260px) {
+  .pay-container {
     grid-template-columns: 1fr;
-
-} }
+  }
+}
